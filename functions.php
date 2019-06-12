@@ -120,6 +120,8 @@ add_action( 'widgets_init', 'seven_roots_davis_coop_widgets_init' );
  * Enqueue scripts and styles.
  */
 function seven_roots_davis_coop_scripts() {
+	wp_enqueue_style( 'bootstrap', get_template_directory_uri() . '/css/bootstrap.min.css', array(), '4.2.1', 'all' );
+
 	wp_enqueue_style( 'seven-roots-davis-coop-style', get_stylesheet_uri() );
 
 	wp_enqueue_script( 'seven-roots-davis-coop-navigation', get_template_directory_uri() . '/js/navigation.js', array(), '20151215', true );
