@@ -24,7 +24,7 @@
 <div id="page" class="site">
 	<a class="skip-link screen-reader-text" href="#content"><?php esc_html_e( 'Skip to content', 'seven-roots-davis-coop' ); ?></a>
 
-	<header id="masthead" class="site-header">
+	<header id="masthead" class="site-header container-fluid">
 		<div class="site-branding">
 			<?php
 			the_custom_logo();
@@ -55,4 +55,4 @@
 		</nav><!-- #site-navigation -->
 	</header><!-- #masthead -->
 
-	<div id="content" class="site-content">
+	<div id="content" class="site-content container">

@@ -13,9 +13,11 @@
 
 	</div><!-- #content -->
 
-	<footer id="colophon" class="site-footer">
-		<div class="site-info">
-
+	<footer id="colophon" class="site-footer navbar sticky-bottom">
+		<div class="site-info d-flex flex-row">
+			<span class="text-uppercase align-self-center">Join our email list</span>
+			<input class="align-self-center" type="text" name="email" value="">
+			<div class="text-uppercase text-center align-self-center">Put me on <br />the list!</div>
 		</div><!-- .site-info -->
 	</footer><!-- #colophon -->
 </div><!-- #page -->
