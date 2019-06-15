@@ -37,11 +37,7 @@
 				<p class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></p>
 				<?php
 			endif;
-			$seven_roots_davis_coop_description = get_bloginfo( 'description', 'display' );
-			if ( $seven_roots_davis_coop_description || is_customize_preview() ) :
-				?>
-				<p class="site-description"><?php echo $seven_roots_davis_coop_description; /* WPCS: xss ok. */ ?></p>
-			<?php endif; ?>
+			?>
 		</div><!-- .site-branding -->
 
 		<nav id="site-navigation" class="main-navigation">

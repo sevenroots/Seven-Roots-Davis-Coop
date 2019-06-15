@@ -10,8 +10,12 @@ get_header();
 
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main">
-
-            <h1>Front page</h1>
+            <?php
+                $seven_roots_davis_coop_description = get_bloginfo( 'description', 'display' );
+                if ( $seven_roots_davis_coop_description || is_customize_preview() ) :
+			?>
+			<p class="site-description"><?php echo $seven_roots_davis_coop_description; /* WPCS: xss ok. */ ?></p>
+			<?php endif; ?>
             <div class="container p-0">
                 <div class="placehold-image">
                 </div>
