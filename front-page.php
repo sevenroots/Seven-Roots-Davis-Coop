@@ -15,7 +15,8 @@ get_header();
                 if ( $seven_roots_davis_coop_description || is_customize_preview() ) :
             ?>
             <div class="whats-new container clearfix">
-                <div class="whats-new-item">
+                <div id="whats-new-fullbar">&nbsp; </div>
+                <div class="whats-new-item first">
                     <div class="whats-new-placehold">
                     </div>
                     <div class="whats-new-title text-center">
@@ -29,7 +30,7 @@ get_header();
                         <a href="#" class="text-uppercase">On Sale Now</a>
                     </div>                    
                 </div>
-                <div class="whats-new-item">
+                <div class="whats-new-item last">
                     <div class="whats-new-placehold">
                     </div>
                     <div class="whats-new-title text-center">
