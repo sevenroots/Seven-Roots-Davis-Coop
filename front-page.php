@@ -19,7 +19,7 @@ get_header();
                     <div class="whats-new-placehold">
                     </div>
                     <div class="whats-new-title text-center">
-                        <a href="#" class="text-uppercase">Local Farms</a>
+                        <a href="#" class="text-uppercase"><strong>Local</strong> Farms</a>
                     </div>
                 </div>
                 <div class="whats-new-item">
