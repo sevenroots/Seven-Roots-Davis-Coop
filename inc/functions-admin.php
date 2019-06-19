@@ -19,8 +19,10 @@ add_action( 'admin_menu', 'seven_roots_davis_coop_add_admin_page' );
 
 function seven_roots_davis_coop_general_info(){
     register_setting('davis-coop-general-info-group', 'address');
+    register_setting('davis-coop-general-info-group', 'phonenumber');
     add_settings_section('davis-coop-general-info-section', 'General Info', 'partial_davis_coop_general_info_options', 'davis_theme_options' );
     add_settings_field('general-info-address', 'Address', 'partial_davis_coop_address', 'davis_theme_options', 'davis-coop-general-info-section' );
+    add_settings_field('general-info-phonenumber', 'Phone Number', 'partial_davis_coop_phonenumber', 'davis_theme_options', 'davis-coop-general-info-section' );
 }
 
 
@@ -35,4 +37,8 @@ function partial_davis_coop_general_info_options(){
 function partial_davis_coop_address(){
     $address = esc_attr( get_option( 'address' ) );
     echo '<input type="text" name="address" value="'.$address.'" placeholder="1234 Street City, State Zip" />';
+}
+function partial_davis_coop_phonenumber(){
+    $phonenumber = esc_attr( get_option( 'phonenumber' ) );
+    echo '<input type="text" name="phonenumber" value="'.$phonenumber.'" placeholder="(123) 456-7890" />';
 }
