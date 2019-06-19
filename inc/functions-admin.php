@@ -20,9 +20,11 @@ add_action( 'admin_menu', 'seven_roots_davis_coop_add_admin_page' );
 function seven_roots_davis_coop_general_info(){
     register_setting('davis-coop-general-info-group', 'address');
     register_setting('davis-coop-general-info-group', 'phonenumber');
+    register_setting('davis-coop-general-info-group', 'hours');
     add_settings_section('davis-coop-general-info-section', 'General Info', 'partial_davis_coop_general_info_options', 'davis_theme_options' );
     add_settings_field('general-info-address', 'Address', 'partial_davis_coop_address', 'davis_theme_options', 'davis-coop-general-info-section' );
     add_settings_field('general-info-phonenumber', 'Phone Number', 'partial_davis_coop_phonenumber', 'davis_theme_options', 'davis-coop-general-info-section' );
+    add_settings_field('general-info-hours', 'Hours of Operation', 'partial_davis_coop_hours', 'davis_theme_options', 'davis-coop-general-info-section' );
 }
 
 
@@ -41,4 +43,8 @@ function partial_davis_coop_address(){
 function partial_davis_coop_phonenumber(){
     $phonenumber = esc_attr( get_option( 'phonenumber' ) );
     echo '<input type="text" name="phonenumber" value="'.$phonenumber.'" placeholder="(123) 456-7890" />';
+}
+function partial_davis_coop_hours(){
+    $hours = esc_attr( get_option( 'hours' ) );
+    echo '<input type="text" name="hours" value="'.$hours.'" placeholder="Open Daily 8:00 - 8:00" />';
 }

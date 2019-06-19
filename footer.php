@@ -35,7 +35,8 @@
 				<div id="address" class="text-center">
 					<?php $address = esc_attr( get_option( 'address' ) ); ?>
 					<?php $phonenumber = esc_attr( get_option( 'phonenumber' ) ); ?>
-					<p class="text-uppercase"><?php print $address ?><span>|</span><?php print $phonenumber ?><span>|</span> Open Daily 7am – 10pm</p>
+					<?php $hours = esc_attr( get_option( 'hours' ) ); ?>
+					<p class="text-uppercase"><?php print $address ?><span>|</span><?php print $phonenumber ?><span>|</span><?php print $hours ?></p>
 				</div>
 				<div class="copyright text-center">	&copy; <?php echo date("Y"); ?> Davis Food Co-op. All rights reserved.</div>
 			</div>
