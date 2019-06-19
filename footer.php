@@ -33,7 +33,8 @@
 					<a href="#">Media</a>
 				</div>
 				<div id="address" class="text-center">
-					<p class="text-uppercase">620 G St. Davis. California 95616 <span>|</span> (530) 758-2667 <span>|</span> Open Daily 7am – 10pm</p>
+					<?php $address = esc_attr( get_option( 'address' ) ); ?>
+					<p class="text-uppercase"><?php print $address ?><span>|</span> (530) 758-2667 <span>|</span> Open Daily 7am – 10pm</p>
 				</div>
 				<div class="copyright text-center">	&copy; <?php echo date("Y"); ?> Davis Food Co-op. All rights reserved.</div>
 			</div>

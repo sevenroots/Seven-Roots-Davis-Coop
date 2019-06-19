@@ -7,6 +7,8 @@
  * @package Seven-Roots-Davis-Coop
  */
 
+require get_template_directory() . '/inc/functions-admin.php';
+
 if ( ! function_exists( 'seven_roots_davis_coop_setup' ) ) :
 	/**
 	 * Sets up theme defaults and registers support for various WordPress features.
