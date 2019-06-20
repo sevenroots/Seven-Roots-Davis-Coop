@@ -15,3 +15,6 @@ Adds fonts and implements them.<br />
 ***
 Adds full width bar to the "whats new" nav section. <br />
 [Example](https://imgur.com/a/nEDp4nt)
+***
+Adds sample images and header to the what's fresh section. <br />
+[Example](https://imgur.com/a/Z8JzbvT)
