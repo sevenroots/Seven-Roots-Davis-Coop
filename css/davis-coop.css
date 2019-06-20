@@ -103,32 +103,42 @@ padding:0;
     margin: 0 1%;
     height:200px;
     background-color: gray;
+    background-size:cover;
+    background-repeat:no-repeat;
+    background-position: center; 
 }
-.site-description{
+.site-description, #whats-fresh-header{
     font-size:30px;
     text-align:center;
     text-transform: uppercase;
     letter-spacing: 3px;
     margin-bottom:45px;
 }
-.whats-new{
+#whats-fresh-header{
+    margin:0 !important;
+}
+#whats-fresh-header-section i{
+    font-size:30px;
+    color: #e07757;
+}
+.whats-fresh{
     margin-bottom:45px;
     position:relative;
 }
-.whats-new-item{
+.whats-fresh-item{
     position:relative;
     width:30%;
     float:left;
     height:250px;
 }
-.whats-new-item:nth-child(2){
+.whats-fresh-item:nth-child(2){
     width:40%;
 }
 
-.whats-new > :last-child{
+.whats-fresh > :last-child{
     width:30%;
 }
-.whats-new-title{
+.whats-fresh-title{
     position:absolute;
     bottom:0;
     width:100%;
@@ -138,26 +148,30 @@ padding:0;
     letter-spacing:1px;
     padding:8px;
 }
-.whats-new-placehold{
+.whats-fresh-placehold{
     height:100%;
     background-color:gray;
     margin:0 5px;
+
+    background-size:cover;
+    background-repeat:no-repeat;
+    background-position: center; 
 }
-.whats-new-item:nth-child(2) .whats-new-placehold{
+.whats-fresh-item:nth-child(2) .whats-fresh-placehold{
     margin-left:0;
 }
-.whats-new :last-child .whats-new-placehold{
+.whats-fresh :last-child .whats-fresh-placehold{
     margin-right:0;
 }
-.whats-new-title a{
+.whats-fresh-title a{
     color:white;
     font-family: 'GothamBold';
 }
-.whats-new-title strong{
+.whats-fresh-title strong{
     font-family: 'GothamBold';
     color:#fbe005;
 }
-#whats-new-fullbar{
+#whats-fresh-fullbar{
     position:absolute;
     bottom:0;
     transform: translateX(-50%);
@@ -168,4 +182,28 @@ padding:0;
     font-weight:600;
     letter-spacing:1px;
     padding:8px;
+}
+.placehold-image:nth-child(1){
+    background-image: url('https://ucaa47476fe454374f862e90b9ff.previews.dropboxusercontent.com/p/thumb/AAfyZ7PBAYy4Jn_RyEJQWXewzzM759FVD1-ZluEqAGPCdai_taAgoEk-Pbpbbs-7-bfPLkIAQu9MdnUC1qcbWewGAAJVbs6votTJNKiSmCi71LrAaHcJMRw-zWF4rDwrrusHBGLzZQ4RGtuvaBp-zHZgLcPJ9XLhUYzvdPijrSp9KZbtx02WbLWMpwVg4ZvGZu8OF-KWVyQN7b1Rsa7KvZ7JDmF8H0qGq2yj5JBNiOT6VPTNxi-SFMuaSCLemO82G8JPj6MLQGu3XXwAvz-6j8dGEzY6babh-G8myz-lnVErYjQC4DcKes8EtDb46zC5ATb4JWFVbOiyLBLqrzRuCrYumP8kt0HFDt02El-l5ER9Qg/p.png?fv_content=true&size_mode=5');
+}
+.placehold-image:nth-child(2){
+    background-image: url('https://uc4594ca1e371b166ef71ab31259.previews.dropboxusercontent.com/p/thumb/AAd8dtSzZZNTu7cigEEdiRu-LH73aUqUZGtIJJ3pFrd4SS1YV9nZDb-GdYFKBsy8KLMkaXXG2ZO6_ZOpcwu1StZNV7gZ-fF1eUjRKKrddRpXpyH4BEG0EUjB_y2LkpnkcxS0dtsKdYDutnUSWSq2eXIpVWu9VvG0y18GhMcP9x_eYp3tEuTx6OmsZ8sM7nsePcvQnG3Tv4YPtI3fx0tRNcj5mVja8X1YP73vS2T2hK_2R-OCP7r4AeQPV2ekj8MCvpYptdFcGvEfJAMGv5HtP_TarsxSzr7RuhGWkgGRFYOPHX-PkzSrojX5xfNZLhcibcDRFQ6XfHjArxTo5ZD79f_laMQPu_X5TBxHoWodVSz6NQ/p.png?fv_content=true&size_mode=5');
+}
+.placehold-image:nth-child(3){
+background-image: url('https://uc7c5d5deb31e39f89f95a2d234a.previews.dropboxusercontent.com/p/thumb/AAeX7E5dhG1WckhGhh_Q0N35XREOvcGK_wPtRTacVOfZIlO1plh5Dff_IHMTFYf2Frrqe2ynLil6MUOJ2AvhGg5fC8E9ocibTZreVSb72tcZbidvhTKIHK81gMWRg2zg1hYLtmts2X4YRgyNyBIIHcC4g0WB5K8VlW7hMH240BzfvAneDCqnpKmabVxbort3e38l1pnY69SGuZQkVFliow8gUdawPfjS-lkIPrOmkhOU8_E-LS_tx11Kc2f-P2W5jt7MvyLlZy91hnkzGoRl0xwAxr-rTy-dry7o7VRLqSIV2s0yWaMKEAf3r_JsfreEdIe4s6oOtnH4xXLOjOaKi5A_mA-jGyjf0wRk4wvSwcRSjA/p.png?fv_content=true&size_mode=5');
+}
+.placehold-image:nth-child(4){
+background-image: url('https://uc8f673ed0a7605f3bd403c11f71.previews.dropboxusercontent.com/p/thumb/AAfaTAN4TDD3pajCuXxHOxOB_cQhsaBr3VVfvY-xMGBSRaG70XtIQioOxXCVWIXNU5E-kVUtaIY6i8xbFLywQCcl_9khVALMCFsmyLe9YGpUHCwNCQwFkyQ_gR4REPd9Dyha5w13VvuP0nqBKEA5eG9G7MpgULmWsOLhzRefqutkNqThDaRxHzpeD3RL8c6N5OzC0HuxoP1PCbk1mO9PyRak_Gq5pkIC9zKp4q--q_oDSFALcaU-7tLciJQtPE6x942z4yTk0XIrqqScwggEGOH_Ad2JJ6cGpL3EIZwvKWha3RnJ3KsuNZ6Rk9WPPgBBFf8G957bvzRmRBf_bAcfKniD0_rPJJq7aQoE9wcdc8nMWg/p.png?fv_content=true&size_mode=5');
+}
+.placehold-image:nth-child(5){
+    background-image: url('https://uce2b91cf72b36ea3b0937d40c74.previews.dropboxusercontent.com/p/thumb/AAcmGJud_3jkpiHEfSo1Dp9DTwcXhwRJMT3w-nwJc1CnnRn7xYeyDXvKVXWapwRdeccI5PEt0Zr7x_MER0-1TPYVRkZe7tbCaQMH4Xn9YWJtwteoNKJhxy4ecgKyygGS1oilb31injAqCFqf6x-925IirB8Fpcqs1Y5pyz604V9RlIQBnIgfulSrSQ7JrjQLeiV09zLHHQcK7svDIdAS4otDPEAjSrPiWl6d6Lu6l1ueqzyI_dRBZYZyJQ65zDlyvc_SH8soo5ajVk0ATuLk43pZ3JR5zRsycRRbGlKyFesmEO2B7H6Ft7OO_8_62N7Ub30WNLUKe-jiTR41ZOHX8Ccpf6Z7On5441JMlOqfPk2mXw/p.png?fv_content=true&size_mode=5');
+}
+.whats-fresh-item:nth-child(2) .whats-fresh-placehold{
+    background-image: url('https://uce6b84ac0f538a602e33d7e3455.previews.dropboxusercontent.com/p/thumb/AAcm7LJ5xy9ZjI-l2BmwUtrG3GUqZBelM9SBzHzaOmGei9bpDgbwmdowqs6UVrguIJbanPl-rg02unAa9qWX480zFyGnjiv5xi4zzVPupT7XhfjwMbLwSoph2Yf9bEFXhZpKX3zcUEe2InIsn3moxqNXjIF9ryRDLwqsy7l8CSlo8zJWf5EHVajKWwnbYYXDy4ZNavWOzJWJ09Oh5Q92CJhg3A7spOFo7IANArcjsPzm6iwxt4D1bQNVDiwLPFfTYDfUV7qq-oaL-LzAZANznqeLoW4GNbAZAZOnQ9q_GnspP1iQoUEOh8_RVYc4estXDcbpaZsmT9BcZlIwoLTHh-bf_kqX3pJGdNd5Vv8JrgxWJg/p.jpeg?fv_content=true&size_mode=5');
+}
+.whats-fresh-item:nth-child(3) .whats-fresh-placehold{
+    background-image: url('https://uc9f2ac9519dbee25d001602fbaa.previews.dropboxusercontent.com/p/thumb/AAdI06VD3UINUI9YX-qSN_KuCmh5bpxkTrEm0blGvsiFp1Kr0cweMIHWnpoCk6IVa1uvrO2gK0P3QPJoDwxVJ_euOc9rEN25hNzJcLrJ6zZn9ERqbTvbOybJSFzpx0KSyhJQKs_yq4QXX_4-v24BFqQMJVGiqzDebUQA4ryyoo_YV7bk85fQEKzoJW6lBGd3TyvdAxl8dP8Pi1xiQgv91ytxciorlPDRU38Hs_PTgb-jtPzDjE4wLDbIXJCbi4epzdi6eYuwBQIHjD1ftS2gvfBe2qp-eRpnYkYT2QZ3-H25PhfVG8ENZb7_mzsK8R-10_f1mK_LFPK2G2dkw-rNp7MfSkpCXjOXVeIkNe1tWe_jgw/p.jpeg?fv_content=true&size_mode=5');
+}
+.whats-fresh-item:nth-child(4) .whats-fresh-placehold{
+    background-image: url('https://uc7d9d47851499dc2cd47ebb5bf0.previews.dropboxusercontent.com/p/thumb/AAcutL6SpkptL8jWjNgoFjsZLOMz6CYQNomdaNcK8ZqzMYGF6X8bcKxE-lXjLly1RbbnUqVUqY67LKTqbmV9pfFguwP4Es3W6T-wFlWDubcZ1ovDHQItHzDh_S4u-l-JhUU_Ly-I43Gw2MXobrhRgINNZv4t6rEDyVnsWKwVOARrvA7z5YNHZJOMu0qfrVoRNEF-nN8cJolflJsHV0wrnErQMRv4iQA0CCgSZEFz6bYux8T3_d74MtZ9zsmvThXJWMrb_1pNXkwDFYTBQnxRn52dCiQ7F_a7Jta7QXsjuDUksHT_PuLsnMqomkEVVUrq5NHiGTWYMEgfcfau_Hv10O57zN5odPuzgvznhNZpdgaWRA/p.jpeg?fv_content=true&size_mode=5');
 }

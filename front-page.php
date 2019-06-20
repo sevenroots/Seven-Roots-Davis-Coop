@@ -14,31 +14,35 @@ get_header();
                 $seven_roots_davis_coop_description = get_bloginfo( 'description', 'display' );
                 if ( $seven_roots_davis_coop_description || is_customize_preview() ) :
             ?>
-            <div class="whats-new container clearfix">
-                <div id="whats-new-fullbar">&nbsp; </div>
-                <div class="whats-new-item first">
-                    <div class="whats-new-placehold">
+            <div id="whats-fresh-header-section" class="text-center">
+                <h3 id="whats-fresh-header">What's Fresh</h3>
+                <i class="fa fa-chevron-down"></i>
+            </div>
+            <div class="whats-fresh container clearfix">
+                <div id="whats-fresh-fullbar">&nbsp; </div>
+                <div class="whats-fresh-item">
+                    <div class="whats-fresh-placehold">
                     </div>
-                    <div class="whats-new-title text-center">
+                    <div class="whats-fresh-title text-center">
                         <a href="#" class="text-uppercase"><strong>Local</strong> Farms</a>
                     </div>
                 </div>
-                <div class="whats-new-item">
-                    <div class="whats-new-placehold">
+                <div class="whats-fresh-item">
+                    <div class="whats-fresh-placehold">
                     </div>
-                    <div class="whats-new-title text-center">
+                    <div class="whats-fresh-title text-center">
                         <a href="#" class="text-uppercase">On Sale Now</a>
                     </div>                    
                 </div>
-                <div class="whats-new-item last">
-                    <div class="whats-new-placehold">
+                <div class="whats-fresh-item">
+                    <div class="whats-fresh-placehold">
                     </div>
-                    <div class="whats-new-title text-center">
+                    <div class="whats-fresh-title text-center">
                         <a href="#" class="text-uppercase">Classes + Events</a>
                     </div>                   
                 </div>
             </div>
-			<p class="site-description"><?php echo $seven_roots_davis_coop_description; /* WPCS: xss ok. */ ?></p>
+			<h3 class="site-description"><?php echo $seven_roots_davis_coop_description; /* WPCS: xss ok. */ ?></h3>
 			<?php endif; ?>
             <div class="container p-0 clearfix featured-image-row">
                 <div class="placehold-image">

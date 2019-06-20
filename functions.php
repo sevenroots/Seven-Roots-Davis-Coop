@@ -122,6 +122,10 @@ add_action( 'widgets_init', 'seven_roots_davis_coop_widgets_init' );
  * Enqueue scripts and styles.
  */
 function seven_roots_davis_coop_scripts() {
+	add_action( 'wp_enqueue_scripts', 'enqueue_load_fa' );
+
+	wp_enqueue_style( 'load-fa', 'https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css' );
+
 	wp_enqueue_style( 'bootstrap', get_template_directory_uri() . '/css/bootstrap.min.css', array(), '4.2.1', 'all' );
 
 	wp_enqueue_style( 'normalize', get_template_directory_uri() . '/css/normalize.css', array(), '1.0.0', 'all' );
