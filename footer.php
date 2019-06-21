@@ -22,15 +22,17 @@
 		<div class="footer-submenu-section" >
 			<div class="wrapper">
 				<div class="main-submenu d-flex flex-row justify-content-center">
-					<a href="#">Calendar</a>
-					<span>|</span>
-					<a href="#">Employment</a>
-					<span>|</span>
-					<a href="#">Contact</a>
-					<span>|</span>
-					<a href="#">Suggestion Box</a>
-					<span>|</span>
-					<a href="#">Media</a>
+					<?php
+
+					$menuParameters = array(
+					'theme_location' => 'menu-2',
+					'container'		 => false,
+					'echo'			 => false,	
+					'depth'          => 0,
+					'after' => '<span class="nav-sep">|</span>'
+					);
+					echo strip_tags(wp_nav_menu( $menuParameters ), '<a><span>' );
+					?>
 				</div>
 				<div id="address" class="text-center">
 					<?php $address = esc_attr( get_option( 'address' ) ); ?>

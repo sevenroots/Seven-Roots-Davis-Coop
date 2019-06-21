@@ -53,13 +53,20 @@ padding:0;
 }
 .main-submenu > *{
     text-transform: uppercase;
-    margin: 0 8px;
     font-weight: 600;
     font-size:16px;
     letter-spacing: 1px;
     color:#404040 !important;
     font-family:'DinAlternateBold';
 }
+.nav-sep{
+    margin:0 8px;
+}
+.nav-sep:last-child{
+    display:none;
+}
+
+
 .site-info{
     background-color:#7cbcb2;
     color:white;
