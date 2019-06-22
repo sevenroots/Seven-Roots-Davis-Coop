@@ -231,8 +231,6 @@ background-image: url('https://uc8f673ed0a7605f3bd403c11f71.previews.dropboxuser
     position:relative;
 }
 #primary-menu{
-    position:absolute;
-    bottom:10px;
     padding-left:30px;
     display:flex;
     width:100%;
@@ -256,11 +254,19 @@ background-image: url('https://uc8f673ed0a7605f3bd403c11f71.previews.dropboxuser
     visibility: hidden;
     -webkit-transform: scaleX(0);
     transform: scaleX(0);
-    -webkit-transition: all 0.3s ease-in-out 0s;
-    transition: all 0.3s ease-in-out 0s;
+    -webkit-transition: all 0.25s ease-in-out 0s;
+    transition: all 0.25s ease-in-out 0s;
   }
   #primary-menu a:hover:before{
     visibility: visible;
     -webkit-transform: scaleX(1);
     transform: scaleX(1);
+  }
+  #social-links i{
+      float:right;
+      font-size:24px;
+      margin-left:5px;
+  }
+  #social-links{
+    margin:15px 0 5px 0;
   }

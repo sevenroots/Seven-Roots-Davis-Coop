@@ -32,13 +32,19 @@
 				?>
 			</div><!-- .site-branding -->
 			<nav id="site-navigation" class="main-navigation">
+				<div id="social-links" class="clearfix">
+					<i class="fa fa-instagram"></i>
+					<i class="fa fa-twitter-square"></i>
+					<i class="fa fa-facebook-square"></i>
+					<i class="fa fa-search"></i>
+				</div>
 				<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html_e( 'Primary Menu', 'seven-roots-davis-coop' ); ?></button>
 				<?php
 				wp_nav_menu( array(
 					'theme_location' => 'menu-1',
 					'menu_id'        => 'primary-menu',
 					'container'		 => false,
-					'menu_class'	 => 'menu nav-menu clearfix',
+					'menu_class'	 => 'menu nav-menu',
 				) );
 				?>
 			</nav><!-- #site-navigation -->
