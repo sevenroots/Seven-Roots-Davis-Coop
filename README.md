@@ -18,3 +18,6 @@ Adds full width bar to the "whats new" nav section. <br />
 ***
 Adds sample images and header to the what's fresh section. <br />
 [Example](https://imgur.com/a/Z8JzbvT)
+***
+Styles the above the fold section with dynamic options. <br />
+[Example](https://imgur.com/a/8D7qqFs)
