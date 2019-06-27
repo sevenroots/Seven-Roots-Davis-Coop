@@ -8,7 +8,9 @@
  *
  * @package Seven-Roots-Davis-Coop
  */
-
+$address = esc_attr( get_option( 'address' ) ); 
+$phonenumber = esc_attr( get_option( 'phonenumber' ) ); 
+$hours = esc_attr( get_option( 'hours' ) ); 
 ?>
 
 	</div><!-- #content -->
@@ -35,10 +37,7 @@
 					?>
 				</div>
 				<div id="address" class="text-center">
-					<?php $address = esc_attr( get_option( 'address' ) ); ?>
-					<?php $phonenumber = esc_attr( get_option( 'phonenumber' ) ); ?>
-					<?php $hours = esc_attr( get_option( 'hours' ) ); ?>
-					<p class="text-uppercase"><?php print $address ?><span>|</span><?php print $phonenumber ?><span>|</span><?php print $hours ?></p>
+					<p class="text-uppercase"><?php print $address ?><span>|</span><?php print $phonenumber ?><span>|</span>Open Daily <?php print $hours ?></p>
 				</div>
 				<div class="copyright text-center">	&copy; <?php echo date("Y"); ?> Davis Food Co-op. All rights reserved.</div>
 			</div>

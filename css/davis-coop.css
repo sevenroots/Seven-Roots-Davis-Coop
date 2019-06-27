@@ -22,6 +22,7 @@ body {
     position: relative;
     margin: 0;
     padding-bottom:260px;
+    --color-primary: #e07757;
   }
 .site-footer{
 position: absolute;
@@ -47,6 +48,16 @@ padding:0;
     font-weight:600;
     letter-spacing:.5px;
     font-family: 'DinAlternateBold';
+}
+.landing-footer p{
+    padding:8px 0;
+    font-size:18px;
+    font-weight:600;
+    letter-spacing:1.5px;
+    font-family: 'DinAlternateBold';
+}
+.landing-footer span{
+    margin: 0 20px;
 }
 .footer-submenu-section #address span{
     margin: 0 5px;
@@ -215,17 +226,17 @@ background-image: url('https://uc8f673ed0a7605f3bd403c11f71.previews.dropboxuser
     background-image: url('https://uc7d9d47851499dc2cd47ebb5bf0.previews.dropboxusercontent.com/p/thumb/AAcutL6SpkptL8jWjNgoFjsZLOMz6CYQNomdaNcK8ZqzMYGF6X8bcKxE-lXjLly1RbbnUqVUqY67LKTqbmV9pfFguwP4Es3W6T-wFlWDubcZ1ovDHQItHzDh_S4u-l-JhUU_Ly-I43Gw2MXobrhRgINNZv4t6rEDyVnsWKwVOARrvA7z5YNHZJOMu0qfrVoRNEF-nN8cJolflJsHV0wrnErQMRv4iQA0CCgSZEFz6bYux8T3_d74MtZ9zsmvThXJWMrb_1pNXkwDFYTBQnxRn52dCiQ7F_a7Jta7QXsjuDUksHT_PuLsnMqomkEVVUrq5NHiGTWYMEgfcfau_Hv10O57zN5odPuzgvznhNZpdgaWRA/p.jpeg?fv_content=true&size_mode=5');
 }
 .site-branding img{
-    height:160px!important;
-    width:160px!important;
+    height:180px!important;
+    width:180px!important;
     max-width: none;
 }
 .site-branding{
-    height:80px;
+    height:90px;
     z-index:100;
 }
 .site-header{
     padding-top:20px;
-    background-color:gray;
+    background-color:white;
 }
 .site-header nav{
     position:relative;
@@ -269,4 +280,21 @@ background-image: url('https://uc8f673ed0a7605f3bd403c11f71.previews.dropboxuser
   }
   #social-links{
     margin:15px 0 5px 0;
+  }
+  .full-background{
+      position:relative;
+      height:100vh;
+      width:100vw;
+      background:gray;
+      background-size: cover;
+      margin-bottom:30px;
+  }
+  .landing-footer{
+      position: absolute;
+      bottom:0;
+      width:100%;
+      background-color:white;
+  }
+  .clr-primary{
+      color: var(--color-primary);
   }

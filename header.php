@@ -24,7 +24,7 @@
 <div id="page" class="site">
 	<a class="skip-link screen-reader-text" href="#content"><?php esc_html_e( 'Skip to content', 'seven-roots-davis-coop' ); ?></a>
 
-	<header id="masthead" class="site-header container-fluid">
+	<header id="masthead" class="site-header container-fluid fixed-top">
 		<div class="container d-flex">
 			<div class="site-branding">
 				<?php
@@ -51,4 +51,4 @@
 		</div><!-- .container -->
 	</header><!-- #masthead -->
 
-	<div id="content" class="site-content container">
+	<div id="content" class="site-content <?php if (!is_front_page()) echo 'container'  ?>">

@@ -4,11 +4,30 @@
  *
  * @package Seven-Roots-Davis-Coop
  */
-
+$address = esc_attr( get_option( 'address' ) ); 
+$phonenumber = esc_attr( get_option( 'phonenumber' ) ); 
+$hours = esc_attr( get_option( 'hours' ) ); 
 get_header();
 ?>
+    <?php
+    $thumb_id = get_post_thumbnail_id();
+    $thumb_url_array = wp_get_attachment_image_src($thumb_id, 'full', true);
+    $thumb_url = $thumb_url_array[0];
+    ?>
+    <div class="full-background" style="background: url('<?php echo $thumb_url ?>') no-repeat center center fixed; background-size:cover;">
 
-	<div id="primary" class="content-area">
+        <div class="landing-footer">
+            <p class="text-uppercase text-center mb-0">
+                <?php print $address ?>
+                <span>|</span>
+                <?php print $phonenumber ?>
+                <span>|</span>
+                <span class="text-uppercase clr-primary">Open to everyone</span><?php print $hours ?> Daily
+            </p>
+        </div>
+    </div>
+
+	<div id="primary" class="content-area container">
 		<main id="main" class="site-main">
             <?php
                 $seven_roots_davis_coop_description = get_bloginfo( 'description', 'display' );
