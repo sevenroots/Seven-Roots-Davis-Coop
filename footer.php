@@ -10,7 +10,7 @@
  */
 $address = esc_attr( get_option( 'address' ) ); 
 $phonenumber = esc_attr( get_option( 'phonenumber' ) ); 
-$hours = esc_attr( get_option( 'hours' ) ); 
+$hours_brief = esc_attr( get_option( 'hours-brief' ) ); 
 ?>
 
 	</div><!-- #content -->
@@ -37,7 +37,7 @@ $hours = esc_attr( get_option( 'hours' ) );
 					?>
 				</div>
 				<div id="address" class="text-center">
-					<p class="text-uppercase"><?php print $address ?><span>|</span><?php print $phonenumber ?><span>|</span>Open Daily <?php print $hours ?></p>
+					<p class="text-uppercase"><?php print $address ?><span>|</span><?php print $phonenumber ?><span>|</span><?php print $hours_brief ?></p>
 				</div>
 				<div class="copyright text-center">	&copy; <?php echo date("Y"); ?> Davis Food Co-op. All rights reserved.</div>
 			</div>
