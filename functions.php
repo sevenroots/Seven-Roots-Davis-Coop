@@ -127,18 +127,19 @@ function seven_roots_davis_coop_scripts() {
 	add_action( 'wp_enqueue_scripts', 'enqueue_load_fa' );
 
 	wp_enqueue_style( 'load-fa', 'https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css' );
-
 	wp_enqueue_style( 'bootstrap', get_template_directory_uri() . '/css/bootstrap.min.css', array(), '4.2.1', 'all' );
-
 	wp_enqueue_style( 'normalize', get_template_directory_uri() . '/css/normalize.css', array(), '1.0.0', 'all' );
-
 	wp_enqueue_style( 'davis_coop', get_template_directory_uri() . '/css/davis-coop.css', array(), '1.0.0', 'all' );
-
 	wp_enqueue_style( 'seven-roots-davis-coop-style', get_stylesheet_uri() );
-
 	wp_enqueue_script( 'seven-roots-davis-coop-navigation', get_template_directory_uri() . '/js/navigation.js', array(), '20151215', true );
-
 	wp_enqueue_script( 'seven-roots-davis-coop-skip-link-focus-fix', get_template_directory_uri() . '/js/skip-link-focus-fix.js', array(), '20151215', true );
+
+
+    wp_register_script( 'jquery', get_template_directory_uri() . '/js/jquery.js', false, '3.3.1', true );
+    wp_enqueue_script( 'jquery' );
+	wp_enqueue_script( 'bootstrap', get_template_directory_uri() . '/js/bootstrap.js', array( 'jquery' ), '4.2.1', true );
+
+	
 
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
 		wp_enqueue_script( 'comment-reply' );
@@ -146,6 +147,12 @@ function seven_roots_davis_coop_scripts() {
 }
 add_action( 'wp_enqueue_scripts', 'seven_roots_davis_coop_scripts' );
 
+function seven_roots_davis_coop_admin_scripts() {
+	wp_enqueue_media();
+	wp_register_script( 'seven-roots-davis-coop-script', get_template_directory_uri() . '/js/seven-roots-davis-coop-script.js', array('jquery'), '1.0.0', true );
+    wp_enqueue_script( 'seven-roots-davis-coop-script' );
+}
+add_action( 'admin_enqueue_scripts', 'seven_roots_davis_coop_admin_scripts' );
 /**
  * Implement the Custom Header feature.
  */

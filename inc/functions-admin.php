@@ -22,7 +22,9 @@ function seven_roots_davis_coop_general_info(){
     register_setting('davis-coop-general-info-group', 'phonenumber');
     register_setting('davis-coop-general-info-group', 'hours');
     register_setting('davis-coop-general-info-group', 'hours-brief');
+    register_setting('davis-coop-general-info-group', 'whats-fresh-img-1');
     add_settings_section('davis-coop-general-info-section', 'General Info', 'partial_davis_coop_general_info_options', 'davis_theme_options' );
+    add_settings_field('general-info-whats-fresh-img-1', 'Cover image', 'partial_davis_coop_whats_fresh_img_1', 'davis_theme_options', 'davis-coop-general-info-section');
     add_settings_field('general-info-address', 'Address', 'partial_davis_coop_address', 'davis_theme_options', 'davis-coop-general-info-section' );
     add_settings_field('general-info-phonenumber', 'Phone Number', 'partial_davis_coop_phonenumber', 'davis_theme_options', 'davis-coop-general-info-section' );
     add_settings_field('general-info-hours', 'Hours of Operation', 'partial_davis_coop_hours', 'davis_theme_options', 'davis-coop-general-info-section' );
@@ -33,6 +35,13 @@ function seven_roots_davis_coop_general_info(){
 //html return pages
 function page_admin_seven_roots_davis_coop(){
     require_once( get_template_directory() . '/inc/templates/davis-coop-admin.php' );
+}
+
+function partial_davis_coop_whats_fresh_img_1(){
+    $whats_fresh_img_1 = esc_attr( get_option( 'whats-fresh-img-1' ) );
+    echo '<input type="button" value="Upload" id="upload-button" class="button button-secondary" />
+    <input id="whats-fresh-img-1" type="hidden" name="whats-fresh-img-1" value="" />
+    <p>File name: '. basename($whats_fresh_img_1) .'</p>';
 }
 
 function partial_davis_coop_general_info_options(){

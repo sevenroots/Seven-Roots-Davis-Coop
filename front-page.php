@@ -5,6 +5,7 @@
  * @package Seven-Roots-Davis-Coop
  */
 get_header();
+$whats_fresh_img_1 = esc_attr( get_option('whats-fresh-img-1'));
 ?>
     <?php
     $thumb_id = get_post_thumbnail_id();
@@ -41,7 +42,7 @@ get_header();
             <div class="whats-fresh container clearfix">
                 <div id="whats-fresh-fullbar">&nbsp; </div>
                 <div class="whats-fresh-item">
-                    <div class="whats-fresh-placehold">
+                    <div class="whats-fresh-placehold" style="background-image: url(<?php echo $whats_fresh_img_1 ?>);">
                     </div>
                     <div class="whats-fresh-title text-center">
                         <a href="#" class="text-uppercase"><strong>Local</strong> Farms</a>
