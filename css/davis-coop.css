@@ -23,6 +23,7 @@ body {
     margin: 0;
     padding-bottom:260px;
     --color-primary: #e07757;
+    --color-secondary: #fbe005;
   }
 .site-footer{
 position: absolute;
@@ -189,10 +190,6 @@ padding:0;
 .whats-fresh-title a:hover{
     text-decoration: none;
 }
-.whats-fresh-title strong{
-    font-family: 'GothamBold';
-    color:#fbe005;
-}
 #whats-fresh-fullbar{
     position:absolute;
     bottom:0;
@@ -279,6 +276,9 @@ padding:0;
   }
   .clr-primary{
       color: var(--color-primary);
+  }
+  .clr-secondary{
+      color: var(--color-secondary);
   }
   #landing-text{
       position:absolute;
