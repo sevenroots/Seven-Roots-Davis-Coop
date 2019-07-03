@@ -48,24 +48,25 @@ $whats_fresh_link_3 = esc_attr( get_option('whats-fresh-link-3'));
                 <div id="whats-fresh-fullbar">&nbsp; </div>
                 <div class="whats-fresh-item">
                     <div class="whats-fresh-placehold" style="background-image: url(<?php echo $whats_fresh_img_1 ?>);">
+                        <div class="whats-fresh-title text-center">
+                            <a href="<?php print $whats_fresh_link_1 ?>" class="text-uppercase"><?php rjc_simple_format('whats-fresh-txt-1', 'clr-secondary') ?></a>
+                        </div>
                     </div>
-                    <div class="whats-fresh-title text-center">
-                        <a href="<?php print $whats_fresh_link_1 ?>" class="text-uppercase"><?php rjc_simple_format('whats-fresh-txt-1', 'clr-secondary') ?></a>
-                    </div>
+
                 </div>
                 <div class="whats-fresh-item">
                     <div class="whats-fresh-placehold" style="background-image: url(<?php echo $whats_fresh_img_2 ?>);">
-                    </div>
-                    <div class="whats-fresh-title text-center">
-                        <a href="<?php print $whats_fresh_link_2 ?>" class="text-uppercase"><?php rjc_simple_format('whats-fresh-txt-2', 'clr-secondary') ?></a>
-                    </div>                    
+                        <div class="whats-fresh-title text-center">
+                            <a href="<?php print $whats_fresh_link_2 ?>" class="text-uppercase"><?php rjc_simple_format('whats-fresh-txt-2', 'clr-secondary') ?></a>
+                        </div>   
+                    </div>                 
                 </div>
                 <div class="whats-fresh-item">
                     <div class="whats-fresh-placehold" style="background-image: url(<?php echo $whats_fresh_img_3 ?>);">
-                    </div>
-                    <div class="whats-fresh-title text-center">
-                        <a href="<?php print $whats_fresh_link_3 ?>" class="text-uppercase"><?php rjc_simple_format('whats-fresh-txt-3', 'clr-secondary') ?></a>
-                    </div>                   
+                        <div class="whats-fresh-title text-center">
+                            <a href="<?php print $whats_fresh_link_3 ?>" class="text-uppercase"><?php rjc_simple_format('whats-fresh-txt-3', 'clr-secondary') ?></a>
+                        </div>  
+                    </div>                 
                 </div>
             </div>
 			<h3 class="site-description"><?php echo $seven_roots_davis_coop_description; /* WPCS: xss ok. */ ?></h3>

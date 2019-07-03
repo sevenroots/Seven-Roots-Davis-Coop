@@ -143,23 +143,16 @@ padding:0;
 .whats-fresh{
     margin-bottom:45px;
     position:relative;
+    display:flex;
 }
 .whats-fresh-item{
     position:relative;
-    width:30%;
     float:left;
     height:250px;
-}
-.whats-fresh-item:nth-child(2){
-    width:40%;
+    flex-grow:1;
 }
 
-.whats-fresh > :last-child{
-    width:30%;
-}
 .whats-fresh-title{
-    position:absolute;
-    bottom:0;
     width:100%;
     background: #e07757;
     font-size:20px;
@@ -171,6 +164,8 @@ padding:0;
     height:100%;
     background-color:gray;
     margin:0 5px;
+    display:flex;
+    flex-direction: column-reverse;
 
     background-size:cover;
     background-repeat:no-repeat;
