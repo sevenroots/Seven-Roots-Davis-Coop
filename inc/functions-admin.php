@@ -34,25 +34,30 @@ function seven_roots_davis_coop_front_page_options(){
     // What's Fresh Block 1 Options
     register_setting('davis-coop-general-info-group', 'whats-fresh-img-1');
     register_setting('davis-coop-general-info-group', 'whats-fresh-txt-1');
+    register_setting('davis-coop-general-info-group', 'whats-fresh-link-1');
     add_settings_section('davis-coop-whats-fresh-block-1-section', 'Whats Fresh Block 1', 'partial_davis_coop_whats_fresh_block_1_section', 'davis_theme_options' );
     add_settings_field('general-info-whats-fresh-img-1', 'Image', 'partial_davis_coop_whats_fresh_img_1', 'davis_theme_options', 'davis-coop-whats-fresh-block-1-section');
     add_settings_field('general-info-whats-fresh-txt-1', 'Title', 'partial_davis_coop_whats_fresh_txt_1', 'davis_theme_options', 'davis-coop-whats-fresh-block-1-section');
+    add_settings_field('general-info-whats-fresh-link-1', 'Link', 'partial_davis_coop_whats_fresh_link_1', 'davis_theme_options', 'davis-coop-whats-fresh-block-1-section');
+
 
     // What's Fresh Block 2 Options
     register_setting('davis-coop-general-info-group', 'whats-fresh-img-2');
     register_setting('davis-coop-general-info-group', 'whats-fresh-txt-2');
+    register_setting('davis-coop-general-info-group', 'whats-fresh-link-2');
     add_settings_section('davis-coop-whats-fresh-block-2-section', 'Whats Fresh Block 2', 'partial_davis_coop_whats_fresh_block_2_section', 'davis_theme_options' );
     add_settings_field('general-info-whats-fresh-img-2', 'Image', 'partial_davis_coop_whats_fresh_img_2', 'davis_theme_options', 'davis-coop-whats-fresh-block-2-section');
     add_settings_field('general-info-whats-fresh-txt-2', 'Title', 'partial_davis_coop_whats_fresh_txt_2', 'davis_theme_options', 'davis-coop-whats-fresh-block-2-section');
+    add_settings_field('general-info-whats-fresh-link-2', 'Link', 'partial_davis_coop_whats_fresh_link_2', 'davis_theme_options', 'davis-coop-whats-fresh-block-2-section');
 
     // What's Fresh Block 3 Options
     register_setting('davis-coop-general-info-group', 'whats-fresh-img-3');
     register_setting('davis-coop-general-info-group', 'whats-fresh-txt-3');
+    register_setting('davis-coop-general-info-group', 'whats-fresh-link-3');
     add_settings_section('davis-coop-whats-fresh-block-3-section', 'Whats Fresh Block 3', 'partial_davis_coop_whats_fresh_block_3_section', 'davis_theme_options' );
     add_settings_field('general-info-whats-fresh-img-3', 'Image', 'partial_davis_coop_whats_fresh_img_3', 'davis_theme_options', 'davis-coop-whats-fresh-block-3-section');
     add_settings_field('general-info-whats-fresh-txt-3', 'Title', 'partial_davis_coop_whats_fresh_txt_3', 'davis_theme_options', 'davis-coop-whats-fresh-block-3-section');
-
-
+    add_settings_field('general-info-whats-fresh-link-3', 'Link', 'partial_davis_coop_whats_fresh_link_3', 'davis_theme_options', 'davis-coop-whats-fresh-block-3-section');
 
 }
 
@@ -66,12 +71,10 @@ function partial_davis_coop_whats_fresh_img_1(){
     $option_name = 'whats-fresh-img-1';
     require( get_template_directory() . '/inc/templates/admin-templates/whats-fresh-img.php');
 }
-
 function partial_davis_coop_whats_fresh_img_2(){
     $option_name = 'whats-fresh-img-2';
     include( get_template_directory() . '/inc/templates/admin-templates/whats-fresh-img.php');
 }
-
 function partial_davis_coop_whats_fresh_img_3(){
     $option_name = 'whats-fresh-img-3';
     include( get_template_directory() . '/inc/templates/admin-templates/whats-fresh-img.php');
@@ -81,15 +84,26 @@ function partial_davis_coop_whats_fresh_txt_1(){
     $whats_fresh_txt_1 = esc_attr( get_option( 'whats-fresh-txt-1' ) );
     echo '<input type="text" name="whats-fresh-txt-1" value="'.$whats_fresh_txt_1.'" placeholder="*Title*" /><span class="description"> Surround text with asterisks for emphasis</span>';
 }
-
 function partial_davis_coop_whats_fresh_txt_2(){
     $whats_fresh_txt_2 = esc_attr( get_option( 'whats-fresh-txt-2' ) );
     echo '<input type="text" name="whats-fresh-txt-2" value="'.$whats_fresh_txt_2.'" placeholder="text" /><span class="description"> Surround text with asterisks for emphasis</span>';
 }
-
 function partial_davis_coop_whats_fresh_txt_3(){
     $whats_fresh_txt_3 = esc_attr( get_option( 'whats-fresh-txt-3' ) );
     echo '<input type="text" name="whats-fresh-txt-3" value="'.$whats_fresh_txt_3.'" placeholder="text" /><span class="description"> Surround text with asterisks for emphasis</span>';
+}
+
+function partial_davis_coop_whats_fresh_link_1(){
+    $whats_fresh_link_1 = esc_attr( get_option( 'whats-fresh-link-1' ) );
+    echo '<input type="text" name="whats-fresh-link-1" value="'.$whats_fresh_link_1.'" placeholder="URL of page" />';
+}
+function partial_davis_coop_whats_fresh_link_2(){
+    $whats_fresh_link_2 = esc_attr( get_option( 'whats-fresh-link-2' ) );
+    echo '<input type="text" name="whats-fresh-link-2" value="'.$whats_fresh_link_2.'" placeholder="URL of page" />';
+}
+function partial_davis_coop_whats_fresh_link_3(){
+    $whats_fresh_link_3 = esc_attr( get_option( 'whats-fresh-link-3' ) );
+    echo '<input type="text" name="whats-fresh-link-3" value="'.$whats_fresh_link_3.'" placeholder="URL of page" />';
 }
 
 function partial_davis_coop_whats_fresh_block_1_section(){

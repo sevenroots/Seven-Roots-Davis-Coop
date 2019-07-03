@@ -8,6 +8,9 @@ get_header();
 $whats_fresh_img_1 = esc_attr( get_option('whats-fresh-img-1'));
 $whats_fresh_img_2 = esc_attr( get_option('whats-fresh-img-2'));
 $whats_fresh_img_3 = esc_attr( get_option('whats-fresh-img-3'));
+$whats_fresh_link_1 = esc_attr( get_option('whats-fresh-link-1'));
+$whats_fresh_link_2 = esc_attr( get_option('whats-fresh-link-2'));
+$whats_fresh_link_3 = esc_attr( get_option('whats-fresh-link-3'));
 ?>
     <?php
     $thumb_id = get_post_thumbnail_id();
@@ -47,21 +50,21 @@ $whats_fresh_img_3 = esc_attr( get_option('whats-fresh-img-3'));
                     <div class="whats-fresh-placehold" style="background-image: url(<?php echo $whats_fresh_img_1 ?>);">
                     </div>
                     <div class="whats-fresh-title text-center">
-                        <a href="#" class="text-uppercase"><?php rjc_simple_format('whats-fresh-txt-1', 'clr-secondary') ?></a>
+                        <a href="<?php print $whats_fresh_link_1 ?>" class="text-uppercase"><?php rjc_simple_format('whats-fresh-txt-1', 'clr-secondary') ?></a>
                     </div>
                 </div>
                 <div class="whats-fresh-item">
                     <div class="whats-fresh-placehold" style="background-image: url(<?php echo $whats_fresh_img_2 ?>);">
                     </div>
                     <div class="whats-fresh-title text-center">
-                        <a href="#" class="text-uppercase"><?php rjc_simple_format('whats-fresh-txt-2', 'clr-secondary') ?></a>
+                        <a href="<?php print $whats_fresh_link_2 ?>" class="text-uppercase"><?php rjc_simple_format('whats-fresh-txt-2', 'clr-secondary') ?></a>
                     </div>                    
                 </div>
                 <div class="whats-fresh-item">
                     <div class="whats-fresh-placehold" style="background-image: url(<?php echo $whats_fresh_img_3 ?>);">
                     </div>
                     <div class="whats-fresh-title text-center">
-                        <a href="#" class="text-uppercase"><?php rjc_simple_format('whats-fresh-txt-3', 'clr-secondary') ?></a>
+                        <a href="<?php print $whats_fresh_link_3 ?>" class="text-uppercase"><?php rjc_simple_format('whats-fresh-txt-3', 'clr-secondary') ?></a>
                     </div>                   
                 </div>
             </div>
