@@ -19,7 +19,7 @@ jQuery(document).ready(function($){
         mediaUploader.on('select', function(){
             attachment = mediaUploader.state().get('selection').first().toJSON();
             $initial_element.next().val(attachment.url);
-            $initial_element.next().next().html("File name: " + attachment.filename);
+            $initial_element.next().next().html(" " + attachment.filename);
         });
         mediaUploader.open();
     };

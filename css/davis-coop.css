@@ -325,3 +325,8 @@ ul.wp-block-gallery{
     -webkit-transform: scaleX(1);
     transform: scaleX(1);
 }
+
+/* parents font size must be explicitly written */
+.line-height-center{
+    line-height: 2em !important;
+}
