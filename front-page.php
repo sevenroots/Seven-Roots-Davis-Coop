@@ -71,52 +71,17 @@ $whats_fresh_link_3 = esc_attr( get_option('whats-fresh-link-3'));
             </div>
 			<h3 class="site-description"><?php echo $seven_roots_davis_coop_description; /* WPCS: xss ok. */ ?></h3>
             <?php endif; ?>
-            <?php 
 
-            $args = array(
-                'posts_per_page' => 1,
-                'post__in'  => get_option( 'sticky_posts' ),
-                'ignore_sticky_posts' => 1
-            );
-            $my_query = new WP_Query( $args );
-
-            $do_not_duplicate = array();
-            while ( $my_query->have_posts() ) : $my_query->the_post();
-                $do_not_duplicate[] = $post->ID; ?>
-
-            <div id="post-<?php the_ID(); ?>" <?php post_class( '' ); ?> >
             <?php
-                the_content( sprintf(
-                    wp_kses(
-                        /* translators: %s: Name of current post. Only visible to screen readers */
-                        __( 'Continue reading<span class="screen-reader-text"> "%s"</span>', 'seven-roots-davis-coop' ),
-                        array(
-                            'span' => array(
-                                'class' => array(),
-                            ),
-                        )
-                    ),
-                    get_the_title()
-                ) );
-                ?>
-            </div>
-            <?php endwhile; ?>
-            <?php wp_reset_postdata(); //VERY VERY IMPORTANT?>
+            while ( have_posts() ) :
+                the_post();
+                
+                the_content();
 
-                    <!--
-            <div class="container p-0 clearfix featured-image-row">
-                <div class="placehold-image">
-                </div>
-                <div class="placehold-image">
-                </div>
-                <div class="placehold-image">
-                </div>
-                <div class="placehold-image">
-                </div>
-                <div class="placehold-image">
-                </div>
-            </div>
-                -->
+                edit_post_link();
+
+            endwhile; // End of the loop.
+            ?>
 		</main><!-- #main -->
 	</div><!-- #primary -->
 
