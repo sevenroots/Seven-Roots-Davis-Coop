@@ -78,8 +78,6 @@ $whats_fresh_link_3 = esc_attr( get_option('whats-fresh-link-3'));
                 
                 the_content();
 
-                edit_post_link();
-
             endwhile; // End of the loop.
             ?>
 		</main><!-- #main -->
