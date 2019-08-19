@@ -259,7 +259,6 @@ padding:0;
       position:relative;
       height:100vh;
       width:100vw;
-      background:gray;
       background-size: cover;
       margin-bottom:30px;
   }
@@ -324,4 +323,39 @@ ul.wp-block-gallery{
 /* parents font size must be explicitly written */
 .line-height-center{
     line-height: 2em !important;
+}
+
+#carouselExampleIndicators{
+    
+    position:absolute;
+    top:0;
+    left:0;
+}
+#carouselExampleIndicators .carousel-item{
+background-color:red;
+min-height:100vh;
+min-width:100vw;
+    z-index:-1;
+}
+
+#carouselExampleIndicators .carousel-item:nth-child(1){
+    background-image:url('https://i.imgur.com/OxadzST.jpg');
+}
+#carouselExampleIndicators .carousel-item:nth-child(2){
+    background:gray;
+}
+.carousel-control-next{
+    align-items:flex-end;
+}
+.carousel-control-next-icon{
+    margin-bottom:75px;
+}
+.carousel-control-prev{
+    align-items:flex-end;
+}
+.carousel-control-prev-icon{
+    margin-bottom:75px;
+}
+.carousel-indicators{
+    bottom:45px;
 }

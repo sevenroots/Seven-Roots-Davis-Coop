@@ -17,7 +17,7 @@ $whats_fresh_link_3 = esc_attr( get_option('whats-fresh-link-3'));
     $thumb_url_array = wp_get_attachment_image_src($thumb_id, 'full', true);
     $thumb_url = $thumb_url_array[0];
     ?>
-    <div class="full-background" style="background: url('<?php echo $thumb_url ?>') no-repeat center center fixed; background-size:cover;">
+    <div class="full-background"> 
         <div id="landing-text">
             <h2 class="text-uppercase mb-0">Fresh. Local.<br />Sustainable.</h2>
             <a href="#" class="text-uppercase">More</a>
@@ -33,6 +33,35 @@ $whats_fresh_link_3 = esc_attr( get_option('whats-fresh-link-3'));
             </p>
         </div>
     </div>
+
+
+<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+  <ol class="carousel-indicators">
+    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+    <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+  </ol>
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img class="d-block w-100" src="..." alt="First slide">
+    </div>
+    <div class="carousel-item">
+      <img class="d-block w-100" src="..." alt="Second slide">
+    </div>
+    <div class="carousel-item">
+      <img class="d-block w-100" src="..." alt="Third slide">
+    </div>
+  </div>
+  <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </a>
+</div>
+
 
 	<div id="primary" class="content-area container">
 		<main id="main" class="site-main">
