@@ -1,6 +1,6 @@
 jQuery(document).ready(function($){
 
-    $('#upload-whats-fresh-img-1, #upload-whats-fresh-img-2, #upload-whats-fresh-img-3').on ('click', upload_whats_fresh);
+    $('[id^="upload-whats-fresh-img"], [id^="upload-carousel-img"]').on ('click', upload_whats_fresh);
     function upload_whats_fresh(e){
         var mediaUploader;
         e.preventDefault();

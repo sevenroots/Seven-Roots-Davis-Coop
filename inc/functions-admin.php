@@ -59,6 +59,13 @@ function seven_roots_davis_coop_front_page_options(){
     add_settings_field('general-info-whats-fresh-txt-3', 'Title', 'partial_davis_coop_whats_fresh_txt_3', 'davis_theme_options', 'davis-coop-whats-fresh-block-3-section');
     add_settings_field('general-info-whats-fresh-link-3', 'Link', 'partial_davis_coop_whats_fresh_link_3', 'davis_theme_options', 'davis-coop-whats-fresh-block-3-section');
 
+    register_setting('davis-coop-general-info-group', 'carousel-img-1');
+    register_setting('davis-coop-general-info-group', 'carousel-img-2');
+    register_setting('davis-coop-general-info-group', 'carousel-img-3');
+    add_settings_section('davis-coop-carousel-imgs', 'Carousel Images', 'partial_davis_coop_carousel_imgs_section', 'davis_theme_options' );
+    add_settings_field('general-info-carousel-img-1', 'Image', 'partial_davis_coop_carousel_img_1', 'davis_theme_options', 'davis-coop-carousel-imgs');
+    add_settings_field('general-info-carousel-img-2', 'Image', 'partial_davis_coop_carousel_img_2', 'davis_theme_options', 'davis-coop-carousel-imgs');
+    add_settings_field('general-info-carousel-img-3', 'Image', 'partial_davis_coop_carousel_img_3', 'davis_theme_options', 'davis-coop-carousel-imgs');
 }
 
 
@@ -77,6 +84,19 @@ function partial_davis_coop_whats_fresh_img_2(){
 }
 function partial_davis_coop_whats_fresh_img_3(){
     $option_name = 'whats-fresh-img-3';
+    include( get_template_directory() . '/inc/templates/admin-templates/whats-fresh-img.php');
+}
+
+function partial_davis_coop_carousel_img_1(){
+    $option_name = 'carousel-img-1';
+    include( get_template_directory() . '/inc/templates/admin-templates/whats-fresh-img.php');
+}
+function partial_davis_coop_carousel_img_2(){
+    $option_name = 'carousel-img-2';
+    include( get_template_directory() . '/inc/templates/admin-templates/whats-fresh-img.php');
+}
+function partial_davis_coop_carousel_img_3(){
+    $option_name = 'carousel-img-3';
     include( get_template_directory() . '/inc/templates/admin-templates/whats-fresh-img.php');
 }
 
@@ -117,6 +137,9 @@ function partial_davis_coop_whats_fresh_block_3_section(){
 }
 function partial_davis_coop_general_info_options(){
     echo 'Change General Information';
+}
+function partial_davis_coop_carousel_imgs_section(){
+    echo "<hr />";
 }
 
 

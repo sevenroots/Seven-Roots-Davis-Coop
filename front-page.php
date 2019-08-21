@@ -11,6 +11,11 @@ $whats_fresh_img_3 = esc_attr( get_option('whats-fresh-img-3'));
 $whats_fresh_link_1 = esc_attr( get_option('whats-fresh-link-1'));
 $whats_fresh_link_2 = esc_attr( get_option('whats-fresh-link-2'));
 $whats_fresh_link_3 = esc_attr( get_option('whats-fresh-link-3'));
+$carousel_img_1 = esc_attr( get_option('carousel-img-1'));
+$carousel_img_2 = esc_attr( get_option('carousel-img-2'));
+$carousel_img_3 = esc_attr( get_option('carousel-img-3'));
+
+
 ?>
     <?php
     $thumb_id = get_post_thumbnail_id();
@@ -42,14 +47,12 @@ $whats_fresh_link_3 = esc_attr( get_option('whats-fresh-link-3'));
     <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
   </ol>
   <div class="carousel-inner">
-    <div class="carousel-item active">
-      <img class="d-block w-100" src="..." alt="First slide">
+
+    <div class="carousel-item active" style="background: url(<?php echo $carousel_img_1 ?>) no-repeat center center fixed; background-size:cover;">
     </div>
-    <div class="carousel-item">
-      <img class="d-block w-100" src="..." alt="Second slide">
+    <div class="carousel-item" style="background: url(<?php echo $carousel_img_2 ?>) no-repeat center center fixed; background-size:cover;">
     </div>
-    <div class="carousel-item">
-      <img class="d-block w-100" src="..." alt="Third slide">
+    <div class="carousel-item" style="background: url(<?php echo $carousel_img_3 ?>) no-repeat center center fixed; background-size:cover;">
     </div>
   </div>
   <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">

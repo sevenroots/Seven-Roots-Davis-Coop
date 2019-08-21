@@ -332,10 +332,11 @@ ul.wp-block-gallery{
     left:0;
 }
 #carouselExampleIndicators .carousel-item{
-background-color:red;
-min-height:100vh;
-min-width:100vw;
+    min-height:100vh;
+    min-width:100vw;
     z-index:-1;
+    background-size: cover;
+
 }
 
 #carouselExampleIndicators .carousel-item:nth-child(1){
