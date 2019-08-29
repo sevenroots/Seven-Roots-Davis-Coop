@@ -138,7 +138,7 @@ function seven_roots_davis_coop_scripts() {
     wp_register_script( 'jquery', get_template_directory_uri() . '/js/jquery.js', false, '3.3.1', true );
     wp_enqueue_script( 'jquery' );
 	wp_enqueue_script( 'bootstrap', get_template_directory_uri() . '/js/bootstrap.js', array( 'jquery' ), '4.2.1', true );
-
+	wp_enqueue_script( 'davis_coop_script', get_template_directory_uri() . '/js/davis_coop_script.js', array( 'jquery' ), '1.0.0', true );
 	
 
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {

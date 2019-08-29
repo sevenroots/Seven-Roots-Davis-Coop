@@ -1,5 +1,4 @@
 jQuery(document).ready(function($){
-
     $('[id^="upload-whats-fresh-img"], [id^="upload-carousel-img"]').on ('click', upload_whats_fresh);
     function upload_whats_fresh(e){
         var mediaUploader;
@@ -23,4 +22,8 @@ jQuery(document).ready(function($){
         });
         mediaUploader.open();
     };
+    $(window).on('resize', function() { 
+        $('.whats-fresh-placehold').height($('.whats-fresh-placehold').width());
+    });
 });
+

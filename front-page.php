@@ -72,12 +72,45 @@ $carousel_img_3 = esc_attr( get_option('carousel-img-3'));
                 $seven_roots_davis_coop_description = get_bloginfo( 'description', 'display' );
                 if ( $seven_roots_davis_coop_description || is_customize_preview() ) :
             ?>
+
             <div id="whats-fresh-header-section" class="text-center">
                 <h3 id="whats-fresh-header">What's Fresh</h3>
                 <i class="fa fa-chevron-down"></i>
             </div>
+
+            <div class="row" style="position:relative;">
+                    
+                    <div id="whats-fresh-fullbar">&nbsp; </div>
+                    <div class="col-sm-4">
+                        <div class="whats-fresh-placehold" style="background-image: url(<?php echo $whats_fresh_img_1 ?>);">
+                            
+                        </div>
+                        <div class="whats-fresh-title text-center">
+                            <a href="<?php print $whats_fresh_link_1 ?>" class="text-uppercase"><?php rjc_simple_format('whats-fresh-txt-1', 'clr-secondary') ?></a>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-4">
+                        <div class="whats-fresh-placehold" style="background-image: url(<?php echo $whats_fresh_img_2 ?>);">
+                            
+                        </div>
+                        <div class="whats-fresh-title text-center">
+                             <a href="<?php print $whats_fresh_link_2 ?>" class="text-uppercase"><?php rjc_simple_format('whats-fresh-txt-2', 'clr-secondary') ?></a>
+                         </div>
+                    </div>
+ 
+                    <div class="col-sm-4">
+                        <div class="whats-fresh-placehold" style="background-image: url(<?php echo $whats_fresh_img_3 ?>);">
+                       </div>
+                        <div class="whats-fresh-title text-center">
+                             <a href="<?php print $whats_fresh_link_3 ?>" class="text-uppercase"><?php rjc_simple_format('whats-fresh-txt-3', 'clr-secondary') ?></a>
+                      </div>
+ 
+                    </div>
+ 
+            </div>
+<!--
             <div class="whats-fresh clearfix">
-                <div id="whats-fresh-fullbar">&nbsp; </div>
                 <div class="whats-fresh-item">
                     <div class="whats-fresh-placehold" style="background-image: url(<?php echo $whats_fresh_img_1 ?>);">
                         <div class="whats-fresh-title text-center">
@@ -101,6 +134,7 @@ $carousel_img_3 = esc_attr( get_option('carousel-img-3'));
                     </div>                 
                 </div>
             </div>
+-->
 			<h3 class="site-description"><?php echo $seven_roots_davis_coop_description; /* WPCS: xss ok. */ ?></h3>
             <?php endif; ?>
 
